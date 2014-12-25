@@ -21,7 +21,7 @@ done
 
 wait
 
-git add --all
+git add "$self"*
 git commit --message "added mtrs from $self" --quiet
 git pull --quiet
 git push --quiet
