@@ -16,6 +16,7 @@ do
     mtr_dir="${self}_${host}_v$ip_version"
     [ -d "$mtr_dir" ] || mkdir "$mtr_dir"
     mtr --report --report-wide --report-cycles 1000 --psize 1024 -$ip_version "$host" > "$mtr_dir"/"$(date +%F_%H-%M-%S)" &
+    sleep 1
   done
 done
 
