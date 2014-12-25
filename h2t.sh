@@ -4,7 +4,7 @@ hosts="217.86.191.73"
 self="h2t.preissler.me"
 cd /root/h2t/
 
-git pull
+git pull --quiet
 
 for host in $hosts
 do
@@ -16,7 +16,7 @@ done
 wait
 
 git add *
-git commit -m "added mtrs from $self"
-git pull
-git push
+git commit -m "added mtrs from $self" --quiet
+git pull --quiet
+git push --quiet
 
