@@ -1,10 +1,8 @@
 #!/bin/sh
 
-hosts=""
+hosts="217.86.191.73"
 self="h2t.preissler.me"
 cd /root/h2t/
-
-filedate=$(date +%F_%H-%M-%S)
 
 git pull
 
