@@ -1,6 +1,6 @@
 #!/bin/sh
 
-hosts="217.86.191.73"
+hosts="217.86.191.73 h2t.daniel-weber.eu"
 self="h2t.preissler.me"
 cd /root/h2t/
 
