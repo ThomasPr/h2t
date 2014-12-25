@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 hosts_v4="217.86.191.73 h2t.daniel-weber.eu"
 hosts_v6="h2t.daniel-weber.eu"
