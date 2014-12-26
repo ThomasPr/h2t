@@ -16,6 +16,18 @@ done
 
 wait
 
+
+# die folgenden Zeilen auskommentieren, falls ein Hostname entfernt werden soll 
+#hostname_to_supress=""   # Hostnamen zum Entfernen hier eintragen
+#for dir in "${self}_${host}_v"*
+#do
+#  file=$dir/$(ls -1 "$dir"/ | tail -n1)
+#  supress_length=$(echo $hostname_to_supress | wc -c)
+#  substitution=$(printf "%-${supress_length}s" xxx)
+#  sed -i "s/$hostname_to_supress/$substitution/g" $file
+#done
+
+
 git add "$self"*
 git commit --message "added mtrs from $self" --quiet
 git pull --quiet
