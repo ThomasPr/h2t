@@ -42,7 +42,7 @@ rrdtool graph loss_daily.png \
 --imgformat PNG \
 --slope-mode \
 --start -86400 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Daily Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
@@ -77,7 +77,7 @@ rrdtool graph loss_weekly.png \
 --imgformat PNG \
 --slope-mode \
 --start -604800 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Weekly Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
@@ -112,7 +112,7 @@ rrdtool graph loss_monthly.png \
 --imgformat PNG \
 --slope-mode \
 --start -2592000 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Monthly Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
@@ -147,7 +147,7 @@ rrdtool graph loss_yearly.png \
 --imgformat PNG \
 --slope-mode \
 --start -31536000 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Yearly Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
