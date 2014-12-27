@@ -19,7 +19,7 @@ RRA:AVERAGE:0.5:1:8760
 
 
 function pair {
-  tail -q -n1 $1 2> /dev/null | awk '{loss+=$3; avg+=$6; count++} END {printf "%f:%f", loss/count, avg/count}' | sed "s/-nan/U/g"
+  tail -q -n1 $@ 2> /dev/null | awk '{loss+=$3; avg+=$6; count++} END {printf "%f:%f", loss/count, avg/count}' | sed "s/-nan/U/g"
 }
 
 mtr_dir="/root/www/h2t/"
@@ -42,7 +42,7 @@ rrdtool graph loss_daily.png \
 --imgformat PNG \
 --slope-mode \
 --start -86400 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Daily Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
@@ -51,8 +51,8 @@ DEF:T2Hv4=$rrd:T2Hv4loss:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6loss:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
 
 rrdtool graph rtt_daily.png \
@@ -68,8 +68,8 @@ DEF:T2Hv4=$rrd:T2Hv4rtt:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6rtt:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
 
 
@@ -77,7 +77,7 @@ rrdtool graph loss_weekly.png \
 --imgformat PNG \
 --slope-mode \
 --start -604800 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Weekly Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
@@ -86,8 +86,8 @@ DEF:T2Hv4=$rrd:T2Hv4loss:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6loss:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
 
 rrdtool graph rtt_weekly.png \
@@ -103,8 +103,8 @@ DEF:T2Hv4=$rrd:T2Hv4rtt:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6rtt:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
 
 
@@ -112,7 +112,7 @@ rrdtool graph loss_monthly.png \
 --imgformat PNG \
 --slope-mode \
 --start -2592000 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Monthly Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
@@ -121,8 +121,8 @@ DEF:T2Hv4=$rrd:T2Hv4loss:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6loss:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
 
 rrdtool graph rtt_monthly.png \
@@ -138,8 +138,8 @@ DEF:T2Hv4=$rrd:T2Hv4rtt:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6rtt:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
 
 
@@ -147,7 +147,7 @@ rrdtool graph loss_yearly.png \
 --imgformat PNG \
 --slope-mode \
 --start -31536000 --end now \
---lower-limit 0 --upper-limit 0 \
+--lower-limit 0 --upper-limit 100 \
 --title "Yearly Packet Loss" \
 --watermark "$(date '+%F %T')" \
 DEF:H2Tv4=$rrd:H2Tv4loss:AVERAGE \
@@ -156,8 +156,8 @@ DEF:T2Hv4=$rrd:T2Hv4loss:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6loss:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
 
 rrdtool graph rtt_yearly.png \
@@ -173,6 +173,6 @@ DEF:T2Hv4=$rrd:T2Hv4rtt:AVERAGE \
 DEF:T2Hv6=$rrd:T2Hv6rtt:AVERAGE \
 LINE:H2Tv4#00FF00:"H2Tv4" \
 LINE:H2Tv6#7FB37C:"H2Tv6" \
-LINE:T2Hv4#0000FF:"H2Tv4" \
-LINE:T2Hv6#8BBFFF:"H2Tv6" \
+LINE:T2Hv4#0000FF:"T2Hv4" \
+LINE:T2Hv6#8BBFFF:"T2Hv6" \
 TEXTALIGN:center > /dev/null
