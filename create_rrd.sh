@@ -19,7 +19,7 @@ RRA:AVERAGE:0.5:1:8760
 
 
 function pair {
-  tail -q -n1 $1 2> /dev/null | awk '{loss+=$3; avg+=$6; count++} END {printf "%f:%f", loss/count, avg/count}' | sed "s/-nan/U/g"
+  tail -q -n1 $@ 2> /dev/null | awk '{loss+=$3; avg+=$6; count++} END {printf "%f:%f", loss/count, avg/count}' | sed "s/-nan/U/g"
 }
 
 mtr_dir="/root/www/h2t/"
