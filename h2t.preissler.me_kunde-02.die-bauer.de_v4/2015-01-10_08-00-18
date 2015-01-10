@@ -1,0 +1,13 @@
+HOST: h2t                                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- static.33.6.40.188.clients.your-server.de  0.0%  1000    1.1   1.1   0.8   9.8   0.8
+  2.|-- hos-tr3.juniper3.rz12.hetzner.de           0.0%  1000    0.6   0.8   0.4  33.1   2.5
+  3.|-- core22.hetzner.de                          0.0%  1000    0.5   0.5   0.5  16.0   0.8
+  4.|-- core11.hetzner.de                          0.0%  1000    3.2   3.1   3.0  21.8   1.8
+  5.|-- juniper4.rz2.hetzner.de                    0.0%  1000    3.1   3.1   3.1  22.4   1.4
+  6.|-- ae51.bar2.Munich1.Level3.net               0.0%  1000    5.8   8.1   5.6 104.4  10.9
+  7.|-- ae-2-70.edge5.Frankfurt1.Level3.net       87.1%  1000    9.6  10.2   9.5  64.5   5.0
+  8.|-- ae-2-70.edge5.Frankfurt1.Level3.net       84.7%  1000    9.6  10.0   9.5  29.5   2.1
+  9.|-- dtag-level3-10.Frankfurt1.Level3.net       0.0%  1000    9.7   9.8   9.6  41.4   2.5
+ 10.|-- m-ea1-i.M.DE.NET.DTAG.DE                   0.0%  1000   25.8  24.4  22.6  46.2   1.4
+ 11.|-- 87.190.188.149                             0.0%  1000   23.0  23.7  22.6 223.3   7.2
+ 12.|-- p57B1F73E.dip0.t-ipconnect.de              0.1%  1000  109.2 109.2 107.4 111.7   0.7
