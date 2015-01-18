@@ -1,0 +1,19 @@
+HOST: h2t                                               Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- static.33.6.40.188.clients.your-server.de          0.0%  1000    1.2   1.4   0.9   9.0   0.6
+  2.|-- hos-tr1.juniper3.rz10.hetzner.de                   0.0%  1000   12.4  13.4   0.5  51.9   7.7
+  3.|-- core21.hetzner.de                                  0.0%  1000   26.1  25.3   5.2  61.6  10.4
+  4.|-- core12.hetzner.de                                  0.0%  1000   24.4  34.3   7.7  72.4  11.8
+  5.|-- juniper4.rz2.hetzner.de                            0.0%  1000   27.2  24.7   3.5 130.8  13.2
+  6.|-- te0-0-1-2.nr11.b040138-0.nue01.atlas.cogentco.com  0.0%  1000   31.6  36.3   7.5  79.0  14.8
+  7.|-- te0-2-0-5.rcr21.nue01.atlas.cogentco.com           0.0%  1000   50.8  29.6   4.0  73.7  13.4
+    |  `|-- 154.25.2.121
+    |   |-- 154.25.2.117
+    |   |-- 154.25.0.9
+  8.|-- be2279.ccr21.muc01.atlas.cogentco.com              0.0%  1000   31.2  35.7   8.9  72.6  11.6
+  9.|-- be2228.ccr41.fra03.atlas.cogentco.com              0.0%  1000   38.9  34.1  14.1  63.4   9.4
+ 10.|-- be2259.ccr41.par01.atlas.cogentco.com              0.0%  1000   45.9  41.9  21.7 106.4  12.4
+ 11.|-- be2308.ccr21.par04.atlas.cogentco.com              0.0%  1000   53.3  43.6  25.5  67.0   8.6
+ 12.|-- dtag.par04.atlas.cogentco.com                      0.0%  1000   50.3  44.6  24.0  71.5   8.5
+ 13.|-- m-eb7-i.M.DE.NET.DTAG.DE                           0.0%  1000   60.3  54.8  32.6  90.3  11.5
+ 14.|-- 87.186.197.225                                    87.2%  1000   76.9  60.2  50.0  83.0   8.0
+ 15.|-- pD9E60A8E.dip0.t-ipconnect.de                     87.2%  1000   98.5  87.8  74.7 104.0   6.5
