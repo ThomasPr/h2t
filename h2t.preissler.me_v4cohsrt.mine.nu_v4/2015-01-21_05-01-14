@@ -1,0 +1,19 @@
+HOST: h2t.preissler.me                                  Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- static.33.6.40.188.clients.your-server.de          0.0%  1000    1.2   1.1   0.8   9.8   0.7
+  2.|-- hos-tr1.juniper3.rz10.hetzner.de                   0.0%  1000    4.5   4.8   0.5  43.0   4.4
+  3.|-- core21.hetzner.de                                  0.0%  1000    9.4   8.9   0.6  34.9   5.4
+  4.|-- core12.hetzner.de                                  0.0%  1000   11.6  11.5   3.3  51.7   5.6
+  5.|-- juniper4.rz2.hetzner.de                            0.0%  1000    9.6   9.0   3.4  32.0   3.9
+  6.|-- te0-0-2-0.nr11.b040138-0.nue01.atlas.cogentco.com  0.0%  1000   11.0  11.2   3.9  23.3   4.1
+  7.|-- 154.25.2.121                                       0.0%  1000    8.5  10.9   3.8  32.2   4.8
+    |  `|-- 154.25.0.13
+    |   |-- 154.25.0.9
+    |   |-- 154.25.2.117
+  8.|-- be2270.ccr22.muc01.atlas.cogentco.com              0.0%  1000   14.2  13.7   6.4  28.9   4.1
+  9.|-- be2229.ccr42.fra03.atlas.cogentco.com              0.0%  1000   17.1  17.1  11.5  29.6   3.4
+ 10.|-- be2278.ccr42.par01.atlas.cogentco.com              0.0%  1000   26.4  26.8  21.2  38.7   3.6
+ 11.|-- be2309.ccr21.par04.atlas.cogentco.com              0.0%  1000   31.6  29.4  21.4  42.5   4.5
+ 12.|-- dtag.par04.atlas.cogentco.com                      0.0%  1000   34.4  28.5  19.3  43.1   4.3
+ 13.|-- m-ea8-i.M.DE.NET.DTAG.DE                           0.0%  1000   47.1  46.7  35.2  69.2   6.1
+ 14.|-- 217.0.74.217                                       0.0%  1000   40.4  40.9  35.4  52.5   3.4
+ 15.|-- pD9FBF76B.dip0.t-ipconnect.de                      0.0%  1000   62.3  58.4  53.0  68.6   3.6
