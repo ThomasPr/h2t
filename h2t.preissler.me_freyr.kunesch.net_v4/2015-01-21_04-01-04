@@ -1,0 +1,21 @@
+HOST: h2t.preissler.me                                  Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- static.33.6.40.188.clients.your-server.de          0.0%  1000    1.4   1.1   0.9   9.7   0.6
+  2.|-- hos-tr3.juniper3.rz12.hetzner.de                   0.0%  1000    5.8   8.2   0.5  47.6   6.2
+  3.|-- core22.hetzner.de                                  0.0%  1000   13.3  14.4   0.7  39.6   7.5
+  4.|-- core12.hetzner.de                                  0.0%  1000    8.8  11.7   3.1  30.0   5.7
+  5.|-- juniper4.rz2.hetzner.de                            0.0%  1000   16.0  16.8   3.6  48.2   8.4
+  6.|-- te0-0-2-0.nr11.b040138-0.nue01.atlas.cogentco.com  0.0%  1000   10.3  12.8   3.8  32.8   5.6
+  7.|-- te0-1-0-5.rcr21.nue01.atlas.cogentco.com           0.0%  1000   14.7  16.2   4.2  53.9   9.1
+    |  `|-- 154.25.2.121
+    |   |-- 154.25.0.13
+    |   |-- 154.25.2.117
+  8.|-- be2279.ccr21.muc01.atlas.cogentco.com              0.0%  1000   16.2  16.1   6.2  41.1   6.5
+  9.|-- be2228.ccr41.fra03.atlas.cogentco.com              0.0%  1000   21.5  25.7  11.9 153.7  10.5
+ 10.|-- be2259.ccr41.par01.atlas.cogentco.com              0.0%  1000   32.7  34.8  21.6  76.7   8.3
+ 11.|-- be2308.ccr21.par04.atlas.cogentco.com              0.0%  1000   38.4  34.6  21.6  68.6   7.6
+ 12.|-- dtag.par04.atlas.cogentco.com                      0.0%  1000   40.4  34.1  21.6  51.6   5.8
+ 13.|-- m-eb6-i.M.DE.NET.DTAG.DE                           0.0%  1000   44.2  52.1  37.0 143.8  17.4
+    |  `|-- 62.154.27.142
+    |   |-- 62.154.27.94
+ 14.|-- 217.237.152.73                                     0.0%  1000   49.5  50.9  38.9  86.1   8.1
+ 15.|-- freyr.kunesch.net                                  0.1%  1000   65.8  75.5  56.4 109.0   9.4
