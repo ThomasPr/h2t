@@ -1,0 +1,13 @@
+HOST: h2t.preissler.me                          Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- static.33.6.40.188.clients.your-server.de  0.0%  1000    1.9   2.2   1.0  11.6   1.2
+  2.|-- hos-tr3.juniper3.rz12.hetzner.de           0.0%  1000    1.8   2.0   0.4  34.7   3.7
+  3.|-- core22.hetzner.de                          0.0%  1000    0.5   2.5   0.5  12.1   1.9
+  4.|-- core1.hetzner.de                           6.9%  1000    5.4   7.3   5.1  15.6   1.9
+  5.|-- juniper1.ffm.hetzner.de                    0.0%  1000    6.4   7.4   5.1  36.2   3.4
+  6.|-- et-4-1-0.fra28.ip4.gtt.net                 0.0%  1000    7.5   7.8   5.2  35.5   3.4
+  7.|-- xe-3-0-2.fra29.ip4.gtt.net                 0.0%  1000    5.8   6.7   5.1  49.0   3.1
+    |  `|-- 141.136.110.70
+  8.|-- as3320.fra29.ip4.gtt.net                   0.0%  1000    7.7  10.3   5.9  60.0   5.3
+  9.|-- k-ea6-i.K.DE.NET.DTAG.DE                   0.0%  1000   10.6  13.0   8.9  23.2   2.2
+ 10.|-- 217.237.155.5                              0.0%  1000   10.2  11.1   9.7  20.1   1.6
+ 11.|-- p578b3e7c.dip0.t-ipconnect.de              0.0%  1000   24.9  34.2  24.0 1029.  77.9
