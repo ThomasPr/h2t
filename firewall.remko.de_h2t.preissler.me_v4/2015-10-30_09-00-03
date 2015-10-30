@@ -1,0 +1,13 @@
+HOST: monitoring                        Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 172.18.0.1                         0.0%  1000    0.5   0.5   0.4   3.3   0.1
+  2.|-- 62.225.75.177                      0.0%  1000    0.8   0.8   0.7   4.9   0.2
+  3.|-- bi-sa2.bi.de.net.dtag.de           0.0%  1000    3.0   7.5   2.9 217.6  19.2
+  4.|-- f-ed6-i.f.de.net.dtag.de           0.1%  1000    9.3  19.0   9.3 127.6  22.1
+  5.|-- ae0-3320.fra10.core-backbone.com   0.0%  1000    9.5   9.5   9.4  82.8   2.7
+  6.|-- ae2-2020.fra20.core-backbone.com   0.0%  1000    9.5   9.5   9.4 112.2   3.6
+  7.|-- core-backbone-100g-fra.hetzner.de  0.0%  1000    9.8   9.8   9.5  76.6   3.2
+  8.|-- core4.hetzner.de                   0.1%  1000    9.6   9.7   9.5  33.1   1.7
+  9.|-- core22.hetzner.de                  0.0%  1000   14.2  14.2  14.1  50.8   2.1
+ 10.|-- juniper3.rz12.hetzner.de           0.0%  1000   14.7  15.5  14.1  82.6   4.3
+ 11.|-- hos-tr4.ms-ex3k2.rz13.hetzner.de   0.1%  1000   15.8  16.1  14.7  38.1   1.8
+ 12.|-- mail.mahuebner.de                  0.0%  1000   15.6  16.4  14.9  50.5   2.0
